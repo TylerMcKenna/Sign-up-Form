@@ -75,7 +75,32 @@ body {
 #rightMiddle {
     flex: 1;
     background-color: rgb(255, 255, 255);
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+#rightMiddle p{ 
+    margin: 20px 100px;
+}
+
+#signupForm {
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#signupForm p {
+    margin: 20px 100px;
+}
+
+#signupForm input {
+    display: block;
+    flex: 1;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+
 #rightBottom {
     flex: 2;
     background-color: rgb(247, 247, 247);
