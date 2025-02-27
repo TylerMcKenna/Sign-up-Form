@@ -27,19 +27,19 @@
             </div>
         </div>
         <div id="rightMiddle">
-            <p id="exitedFormText">Let's do this!</p>
+            <p id="formIntro">Let's do this!</p>
             <form action="" method="post" id="signupForm">
                 <p>
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
+                    <input type="text" id="first_name" name="first_name" required>
                 </p>
                 <p>
                     <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
+                    <input type="text" id="last_name" name="last_name" required>
                 </p>
                 <p>
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </p>
                 <p>
                     <label for="phone_number">PHONE NUMBER</label>
@@ -47,16 +47,20 @@
                 </p>
                 <p>
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
-                </p>
+                    <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,20}$" 
+                    title="Password must be 6 to 20 characters in length, have at least one lowercase and uppercase letter, and have at least one digit"
+                    required>                </p>
                 <p>
                     <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
+                    <input type="password" id="confirm_password" name="confirm_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,20}$" 
+                    title="Password must be 6 to 20 characters in length, have at least one lowercase and uppercase letter, and have at least one digit"
+                    required>
                 </p>
             </form>
         </div>
         <div id="rightBottom">
             <button form="signupForm" type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in<a></p>
         </div>
     </div>
 </body>
