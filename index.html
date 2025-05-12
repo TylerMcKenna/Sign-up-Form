@@ -26,7 +26,10 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
         </div>
+        <!-- space out form from edges more -->
+         <!-- maybe prevent scrolling -->
         <div id="rightMiddle">
+            <!-- less whitespace between columns -->
             <p id="formIntro">Let's do this!</p>
             <form action="" method="post" id="signupForm">
                 <p>
@@ -41,11 +44,13 @@
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" name="email" required>
                 </p>
+                <!-- doesn't check phone number -->
                 <p>
                     <label for="phone_number">PHONE NUMBER</label>
                     <input type="tel" id="phone_number" name="phone_number">
                 </p>
                 <p>
+                    <!-- chill on the regex -->
                     <label for="password">PASSWORD</label>
                     <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,20}$" 
                     title="Password must be 6 to 20 characters in length, have at least one lowercase and uppercase letter, and have at least one digit"
@@ -58,6 +63,7 @@
                 </p>
             </form>
         </div>
+        <!-- fix white space -->
         <div id="rightBottom">
             <button form="signupForm" type="submit">Create Account</button>
             <p>Already have an account? <a href="#">Log in<a></p>
